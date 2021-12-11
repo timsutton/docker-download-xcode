@@ -1,5 +1,7 @@
 # docker-download-xcode
 
+**NOTE:** Xcode 13's xip archive uses a format that's incompatible with this method. This is documented in the [Xcode 13 release notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes) (`Note: Other methods of expanding the archive may produce a broken Xcode app. (78714333)`) I haven't personally done any investigation as to fixing this.
+
 A very much work-in-progress tool to help make fetching new Xcodes easier whether on macOS or Linux.
 
 The approach is very similar to that of [XcodeInstall](https://github.com/xcpretty/xcode-install), except we obtain the download URLs via https://xcodereleases.com because:
